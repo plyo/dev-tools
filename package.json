@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0-alpha.1",
+  "name": "@plyo/dev-tools",
+  "repository": "plyo/plyo.tools",
+  "description": "Common tools for plyo projects",
+  "license": "MIT",
+  "dependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "plyo-tools": "^4.0.0",
+    "prettier": "^1.10.2"
+  },
+  "scripts": {
+    "lint": "node run/lint",
+    "lint-staged": "node run/lint --staged",
+    "precommit": "node run/lint --staged"
+  }
+}
