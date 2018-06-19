@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "name": "@plyo/dev-tools",
   "repository": "plyo/plyo.tools",
   "description": "Common tools for plyo projects",
@@ -16,6 +16,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.14.3",
+    "nodemon": "^1.17.5",
     "plyo-tools": "^4.0.0",
     "prettier": "^1.10.2"
   },
