@@ -15,7 +15,10 @@ async function lint(staged) {
   if (staged) {
     // we need `|| true` at the end because grep return 1 exit status if no lines matched and the script throws an error
     const { stdout } = await exec(
-      "git status -s -uno | grep -v D |  grep -v '^ ' | awk '{print $2}' | grep js$ || true"
+      // $4 -> name of renamed file
+      // $2 -> name of changed file
+      // in case of renaming we should use destination file, since source one does not exist
+      "git status -s -uno | grep -v D |  grep -v '^ ' | awk '$4{print $4} !$4{print $2}' | grep js$ || true"
     );
     stagedFiles = stdout.split("\n");
     stagedFiles.pop();
