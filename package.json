@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "name": "@plyo/dev-tools",
   "repository": "plyo/plyo.tools",
   "description": "Common tools for plyo projects",
